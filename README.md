@@ -1,8 +1,10 @@
 # Search Angular
 
-A simple Search feild using Angular.js with fantastic UI
+A simple searching project using Angular.js. This is very small project and can help you to jump start in Angular.js. I have used almost all main features of Angular.js like Controllers, Routes, Pipes, Directives also I have appllies filters
+![alt tag](http://umairansari.net/demo/search-angular/canvas.png)
 
-**Version 1.0.1** - [Change Log](CHANGELOG.md)
+
+**Version 1.0.0* - [Change Log](CHANGELOG.md)
 
 ---
 
