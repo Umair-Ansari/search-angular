@@ -2,7 +2,7 @@
 
 A simple Search feild using Angular.js with fantastic UI
 
-**Version 1.0.1** - [Change Log](CHANGELOG.md)
+**Version 1.0.0* - [Change Log](CHANGELOG.md)
 
 ---
 
