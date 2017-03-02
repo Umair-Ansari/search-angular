@@ -1,0 +1,15 @@
+<section>
+	<div ng-model='developers' class="resultDetail">
+		<div class="image" >
+			<img src="images/{{developers[itemId].image}}.jpg" />
+		</div>
+		<div class="detail">
+			<div>{{developers[itemId].name}}</div>
+			<div class='headline'>{{developers[itemId].headline}}</div> <br />
+			
+			<div>{{developers[itemId].email}}<br/>{{developers[itemId].intro}}</div>
+		</div>
+	</div><br />
+	<a href="#/list" class="button">&laquo;Go Back</a> <a href="#/detail/{{prevItem}}" class="button">&lt;</a><a href="#/detail/{{nextItem}}" class="button">&gt;</a>
+
+</section>

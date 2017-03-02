@@ -1,0 +1,40 @@
+<section>
+	<div class="form-heading" >Search for Developer</div>
+	<div>
+		<div>
+		<div class="left">Options <input type="checkbox" ng-model="options" /> </div>
+			<input type="text"  class="input-field" name="field1" placeholder='type here'  ng-model='query' autofocus='true' />
+			
+		</div>
+	</div>
+	<div ng-show='options' class="bottom ">
+		<span>
+		Order By
+		 <select ng-model="decending">
+			<option value="false">Ascending</option>
+			<option value="true">Descending</option>
+		</select>
+		Sort By <select ng-model="order">
+			<option value="name">Name</option>
+			<option value="headline">Headline</option>
+		</select>
+		</span>
+	</div>
+	
+	<div>
+		<div  class="result" ng-repeat="developer in developers | filter : query | limitTo : 4 | orderBy : order:decending " ng-show='query'>
+			<a href="#/detail/{{developers.indexOf(developer)}}">
+				<div class="image">
+					<img src="images/{{developer.image}}.jpg" />
+				</div>
+				<div class="content">
+					<span>{{developer.name}}</span>
+					<label class='headline'>{{developer.headline}}</label>
+					<p class="truncate"> {{developer.email}} <br />
+					{{developer.intro}}</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<span ng-hide='query'>it's too quiet around here..!</span>
+</section>
